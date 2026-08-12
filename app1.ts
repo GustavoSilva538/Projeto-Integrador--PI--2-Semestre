@@ -3,6 +3,12 @@ const sc = prompt();
 
 let loop : number = 0;
 
+function limparTela(){
+  for(let i : number = 0; i < 5; i++){
+            console.log("");
+        }
+}
+
 console.log("====================");
 console.log("====== Dados ======");
 console.log("Digite seu Nome: ");
@@ -16,10 +22,6 @@ let idade : number = Number(sc());
 
 
 while(loop == 0){
-
-for(let i : number = 0; i < 5; i++){
-            console.log("");
-        }
 
 console.log("====== MENU =====");
 console.log("1- Calcular Média");
@@ -52,7 +54,7 @@ switch(escolha){
             console.log("Reprovado");
         }
         console.log("===================");
-
+        break;
 
     
     case 2: 
@@ -62,9 +64,7 @@ switch(escolha){
         console.log("Nome: " + nome + " " +sobrenome);
         console.log("Idade: " + idade);
         console.log("===================");
-        for(let i : number = 0; i < 5; i++){
-            console.log("");
-        }
+        limparTela();
         break;
 
     case 3:
