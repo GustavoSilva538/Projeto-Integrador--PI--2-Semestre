@@ -12,3 +12,11 @@ export function verificarSituacao(media : number) : string{
     }
     return situacao;
 }
+
+export function calcularTabuada(num : number, cont : number) : number {
+    for(let i : number = 0; i <= cont; cont++){
+        let calculo = num * cont;
+        
+    }
+    
+}
